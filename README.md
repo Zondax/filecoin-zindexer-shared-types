@@ -1,2 +1,2 @@
 # filecoin-zindexer-shared-types
-Data types definitions used by the zindexers system
+Data types definitions shared among the filecoin's indexing system
