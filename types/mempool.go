@@ -11,11 +11,11 @@ type MempoolTransaction struct {
 	// Value contains the value amount
 	Value string `json:"value" graphql:"value"`
 	// Fee is an optional fee that the sender commits to pay to execute this transaction.
-	Fee `json:"fee,omitempty" gorm:"embedded"`
+	Fee `gorm:"embedded"`
 	// MethodName is the string version of the method that should be called.
 	MethodName string `json:"method_name" graphql:"method_name"`
 	// Method num
-	Method uint64 `gorm:"-" graphql:"@include(if: false)"`
+	Method uint64 `gorm:"-" graphql:"# ignore\n"`
 	// TxHash
 	TxHash string `json:"tx_hash" gorm:"uniqueIndex" graphql:"tx_hash"`
 	// From
