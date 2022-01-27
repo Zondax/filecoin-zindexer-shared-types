@@ -3,8 +3,8 @@ package types
 import "time"
 
 type MempoolTransaction struct {
-	FirstTimeSeen time.Time `json:"first_seen" graphql:"first_time_seen"`
-	LastTimeSeen  time.Time `json:"last_seen"  graphql:"last_time_seen"`
+	FirstTimeSeen time.Time `json:"first_time_seen" graphql:"first_time_seen"`
+	LastTimeSeen  time.Time `json:"last_time_seen"  graphql:"last_time_seen"`
 
 	// Nonce is a nonce to prevent replay.
 	Nonce uint64 `json:"nonce" graphql:"nonce"`
